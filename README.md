@@ -60,4 +60,6 @@ Make sure you have the following installed on your system:
 - **PUT /api/customers/:id** - Update a customer by ID
 - **DELETE /api/customers/:id** - Delete a customer by ID
 
+For checking the deployed app:
 
+https://luxury-sorbet-446f71.netlify.app
