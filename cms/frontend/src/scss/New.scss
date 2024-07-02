@@ -1,0 +1,100 @@
+:root {
+  --form-background: white;
+  --form-padding: 2rem;
+  --form-border-radius: 10px;
+  --form-title-color: rgb(32, 141, 158);
+  --input-padding: 15px;
+  --input-margin: 10px 0;
+  --input-border-radius: 1.5rem;
+  --input-border: 1px solid gray;
+  --input-font-weight: 700;
+  --input-font-size: 1rem;
+  --label-font-size: 16px;
+  --label-color: gray;
+  --button-background: rgb(32, 141, 158);
+  --button-color: white;
+  --button-border-radius: 1.5rem;
+  --button-font-weight: bold;
+  --button-font-size: 18px;
+  --button-margin-top: 15px;
+  --button-margin-bottom: 30px;
+  --button-height: 50px;
+  --overlay-start: rgba(255, 255, 255, 0.7);
+  --overlay-end: rgba(255, 255, 255, 0.3);
+  --background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  background: linear-gradient(var(--overlay-start), var(--overlay-end)), var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  background-color: var(--form-background);
+  padding: var(--form-padding);
+  border-radius: var(--form-border-radius);
+}
+
+form h1 {
+  color: var(--form-title-color);
+  text-align: center;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+form input {
+  padding: var(--input-padding);
+  margin: var(--input-margin);
+  border-radius: var(--input-border-radius);
+  border: var(--input-border);
+  font-weight: var(--input-font-weight);
+  font-size: var(--input-font-size);
+}
+
+form label {
+  font-size: var(--label-font-size);
+  color: var(--label-color);
+  text-align: start;
+}
+
+form button {
+  width: 100%;
+  height: var(--button-height);
+  padding: 10px;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  cursor: pointer;
+  margin-top: var(--button-margin-top);
+  margin-bottom: var(--button-margin-bottom);
+}
+
+@media (max-width: 300px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  form h1 {
+    font-size: 1.5rem;
+  }
+
+  .formInput {
+    width: 210px;
+  }
+
+  form input {
+    padding: 10px;
+  }
+}

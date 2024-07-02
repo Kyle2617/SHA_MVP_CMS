@@ -1,0 +1,68 @@
+:root {
+  --overlay-start: rgba(255, 255, 255, 0.7);
+  --overlay-end: rgba(255, 255, 255, 0.3);
+  --background-image: url("https://images.pexels.com/photos/6985184/pexels-photo-6985184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  --box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  --box-shadow-light: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  --edit-button-color: darkgreen;
+  --edit-button-border: 1px dotted darkgreen;
+  --delete-button-color: crimson;
+  --delete-button-border: 1px dotted crimson;
+  --cell-content-color: black;
+  --column-header-color: black;
+  --column-header-font-weight: bold;
+}
+
+.user-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  background: linear-gradient(var(--overlay-start), var(--overlay-end)), var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.table {
+  width: 80%;
+  height: 86vh;
+  box-shadow: var(--box-shadow-light);
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.editButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: var(--edit-button-color);
+  border: var(--edit-button-border);
+  cursor: pointer;
+}
+
+.deleteButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: var(--delete-button-color);
+  border: var(--delete-button-border);
+  cursor: pointer;
+}
+
+.MuiDataGrid-cellContent {
+  color: var(--cell-content-color);
+}
+
+.css-1jbbcbn-MuiDataGrid-columnHeaderTitle {
+  color: var(--column-header-color);
+  font-weight: var(--column-header-font-weight);
+}
+
+@media (max-width: 575.98px) {
+  .react-confirm-alert {
+    width: 100%;
+  }
+}
+

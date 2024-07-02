@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dotenv environment variables file
+.env
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# React build directory
+build/
+dist/
+
+# Ignore lockfiles
+package-lock.json
+yarn.lock
+
+# Ignore coverage directory
+coverage/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore compiled JavaScript files
+*.js.map
+
+# Ignore IDE specific files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore other system files
+Thumbs.db
